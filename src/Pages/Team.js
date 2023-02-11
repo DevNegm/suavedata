@@ -50,7 +50,7 @@ export default function Team() {
             ? Array(6)
                 .fill(0)
                 .map((item) => (
-                  <div className="col-md-3" style={{flexGrow:"1"}}>
+                  <div className="col-md-3 w-100" style={{flexGrow:"1"}}>
                     <SkeletonTheme baseColor="#313131" highlightColor="#444">
                       <Skeleton height={260} />
                       <Skeleton className="my-3" />
