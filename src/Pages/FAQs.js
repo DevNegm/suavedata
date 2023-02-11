@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Faq from "../components/Faq";
 
 export default function FAQs() {
@@ -36,6 +36,9 @@ export default function FAQs() {
       body: "The time it takes to build a machine learning model can vary widely depending on several factors, including: 1. Problem complexity: Simple problems with well-defined objectives and limited data may take only a few hours to build a model, while more complex problems with large datasets and multiple objectives can take weeks or even months. 2. Data preparation: Cleaning and preparing data can be time-consuming, especially if the data is in a raw format or if there are many missing values. 3. Model complexity: More complex models, such as deep learning models with many layers, can take longer to train and may require more computational resources.  4. Expertise: The time it takes to build a model can also depend on the expertise of the person building it. An experienced data scientist may be able to build a model much faster than someone with less experience. 5. Computational resources: The time it takes to build a model can also depend on the computational resources available. Training complex models on large datasets can take many hours or even days on a single machine, but can be accelerated using parallel computing or cloud resources. Overall, the time it takes to build a machine learning model can range from a few hours for a simple model to several months for a complex model with large amounts of data. The specific time required will depend on the factors listed above and the specific problem being addressed.",
     },
   ];
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className="container py-5" style={{ minHeight: "80vh" }}>
       <h2 className="fw-bold text-center py-5 m-0 text-light">

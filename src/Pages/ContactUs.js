@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 export default function ContactUs() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className="container" style={{ minHeight: "80vh" }}>
       <div className="row align-items-center py-5 my-5 gy-4">

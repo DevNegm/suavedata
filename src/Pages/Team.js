@@ -33,6 +33,9 @@ export default function Team() {
     },
   ];
   useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+  useEffect(() => {
     setTimeout(() => {
       setTeam(data);
     }, 500);

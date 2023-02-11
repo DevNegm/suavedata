@@ -63,7 +63,9 @@ export default function Service({ item }) {
       body: "Review all the decisions taken, and actions undertaken by a business for achieving the larger vision. Knowing what business strategy is and how to execute it properly can help businesses become market leaders in their domain Business model creation, prescriptive deliverable (provide a recommendation on the steps a business should take to resolve an issue)",
     },
   ];
-
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   const [searching, setsearching] = useState(null);
 
   const { title } = useParams();
