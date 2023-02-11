@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth !important;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #141414 !important;
+  font-family: "Roboto Mono", monospace !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+  background-image: url("./Assets/clint-patterson-dYEuFB8KQJk-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  background-position: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #1414143e;
+  backdrop-filter: blur(3px);
 }
-
-.App-link {
-  color: #61dafb;
+.txt::after {
+  content: "\2026 ";
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  -webkit-animation: ellipsis steps(4, end) 2.3s infinite;
+  animation: ellipsis steps(4, end) 2.3s infinite !important;
+  width: 0px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+@keyframes ellipsis {
   to {
-    transform: rotate(360deg);
+    width: 56px;
   }
+}
+
+@-webkit-keyframes ellipsis {
+  to {
+    width: 56px;
+  }
+}
+.anime {
+  animation: fadeIn 0.3s;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.98); }
+  100% { opacity: 1;transform: scale(1); }
 }
