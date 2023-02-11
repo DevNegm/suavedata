@@ -84,7 +84,6 @@ export default function Service({ item }) {
       {searching == null ? (
        <>
         <SkeletonTheme baseColor="#313131" highlightColor="#444">
-  <Skeleton height={300} className="mt-5" />
   <Skeleton className="my-3" />
   <Skeleton height={10} count={7} />
   </SkeletonTheme>
@@ -92,7 +91,6 @@ export default function Service({ item }) {
       ) : (
         <>
         <Link to="/services" style={{width:"fit-content"}} className="text-decoration-none text-white fs-5 mb-5 d-block"><BsBoxArrowLeft/> Back</Link>
-        <img className="w-100" style={{maxHeight:"300px",objectFit:"cover"}} src={img} alt={searching?.title} />
           <h2 className="fw-bold fs-2 my-3 text-white">{searching?.title}</h2>
           <p className="m-0 text-light">{searching?.body}</p>
         </>

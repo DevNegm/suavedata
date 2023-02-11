@@ -12,7 +12,7 @@ body {
   font-family: "Roboto Mono", monospace !important;
 }
 header {
-  background-image: url("./Assets/clint-patterson-dYEuFB8KQJk-unsplash.jpg");
+  background-image: url("./Assets/bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

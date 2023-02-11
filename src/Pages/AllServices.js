@@ -75,10 +75,10 @@ export default function AllServices() {
   }, [services]);
   return (
     <div className="container" style={{minHeight:"80vh"}}>
-      <div className="row align-items-center py-5 my-5 gy-4">
         <h2 className="fw-bold text-center py-5 m-0 text-light">
-          Products and Services
+        Services
         </h2>
+      <div className="d-flex gap-3 flex-wrap justify-content-center align-items-stretch py-5 my-5 gy-4">
 
         {services == null
           ? Array(6)
@@ -96,10 +96,10 @@ export default function AllServices() {
           : services.map((item) => (
               <Link
                 to={`/services/${slugify(item?.title.toLowerCase())}`}
-                className="col-lg-3 d-flex flex-column text-decoration-none"
+                className="d-flex flex-column text-decoration-none my-0 p-3 rounded-3"
+                style={{border:"1px solid #444",flexGrow:"1",width:"300px"}}
               >
-                <img src={img} className="w-100" alt="image" />
-                <p className="fs-5 fw-bold text-white my-3">
+                <p className="fs-5 fw-bold text-white mb-3">
                   {item?.title?.slice(0, 20)}...
                 </p>
                 <p className="small text-white m-0">

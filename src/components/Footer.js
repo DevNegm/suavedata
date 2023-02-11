@@ -17,13 +17,13 @@ export default function Footer() {
           </div>
           <div className="col-lg-2 gap-2 d-flex flex-column justify-content-center ">
             <p className="fw-bold text-white mb-3">Get In Touch</p>
-            <Link to="/contact" className="text-white   text-decoration-none m-0">
+            <Link to="/contactus" className="text-white   text-decoration-none m-0">
               Contact Us
             </Link>
           </div>
         </div>
         <div className="row pt-5 justify-content-center">
-          <p className="text-white text-center m-0">Developed By Era Coding</p>
+          <p className="text-white text-center m-0">Copyright © 2023 All Rights Reserved</p>
         </div>
       </div>
     </footer>

@@ -12,11 +12,11 @@ export default function Navbar() {
             About Us /
             </a>
             <Link to="services" className='nav-link text-white fw-bold'>
-            Products and Services /
+            Services /
             </Link>
-            <Link to="team" className='nav-link text-white fw-bold'>
+            {/* <Link to="team" className='nav-link text-white fw-bold'>
             Team /
-            </Link>
+            </Link> */}
             <Link to="contactus" className='nav-link text-white fw-bold'>
             Contact Us /
             </Link>
