@@ -1,13 +1,13 @@
 import React from "react";
-import img from "../Assets/clint-patterson-dYEuFB8KQJk-unsplash.jpg";
+// import img from "../Assets/clint-patterson-dYEuFB8KQJk-unsplash.jpg";
 export default function AboutUs() {
   return (
     <div id="about" className="container">
-      <div className="row align-items-center py-5 my-5">
+      <div className="row justify-content-center align-items-center py-5 my-5">
         <h2 className="fw-bold text-center py-5 m-0 text-light">About Us</h2>
-        <div className="col-lg-6">
+        {/* <div className="col-lg-6">
           <img src={img} className="w-100" alt="image" />
-        </div>
+        </div> */}
         <div className="col-lg-6">
           <div className="p-3">
             <h2 className="fw-bold text-white mb-3">
