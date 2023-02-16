@@ -23,7 +23,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="row pt-5 justify-content-center">
-          <p className="text-white text-center m-0">Copyright © 2023 All Rights Reserved</p>
+          <p className="text-white text-center m-0">Austin, Texas Copyright © 2023 All Rights Reserved</p>
         </div>
       </div>
     </footer>

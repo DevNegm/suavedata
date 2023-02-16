@@ -29,6 +29,12 @@ header::after {
   background-color: #1414143e;
   backdrop-filter: blur(3px);
 }
+.txt {
+  letter-spacing: 0px;
+  font: 16px "monospace", sans-serif;
+  color: #fff;
+  background:#141414;
+}
 .txt::after {
   content: "\2026 ";
   overflow: hidden;
@@ -40,7 +46,7 @@ header::after {
 }
 @keyframes ellipsis {
   to {
-    width: 56px;
+    width: 20px;
   }
 }
 
