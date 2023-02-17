@@ -16,7 +16,7 @@ export default function Faq({faq}) {
             <p className="fw-bold m-0 d-flex fs-5 justify-content-between gap-2" style={{cursor:"pointer"}} onClick={handleOpen}>
               {faq?.title}  <BiDownArrow style={{transform: opener && "rotate(180deg)",transition:"all 250ms ease-in-out" }} />
             </p>
-            {opener && <p className="m-0 my-3 pt-3 anime" style={{borderTop:"1px solid #555"}}>{faq?.body}</p>}
+            {opener && <p dangerouslySetInnerHTML={{__html : faq?.body}} className="m-0 my-3 pt-3 anime" style={{borderTop:"1px solid #555"}}/>}
           </div>
   );
 }

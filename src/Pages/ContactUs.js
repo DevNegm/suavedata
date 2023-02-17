@@ -142,7 +142,7 @@ export default function ContactUs() {
             </div>
             <div className="d-flex w-100 flex-column">
               <label htmlFor="test" className="form-label text-white">
-                What challenge would you like to tackle?,
+                What challenge would you like to tackle?
               </label>
               <textarea
                 type="text"

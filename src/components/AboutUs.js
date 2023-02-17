@@ -11,7 +11,7 @@ export default function AboutUs() {
         <div className="col-lg-6">
           <div className="p-3">
             <h2 className="fw-bold text-white mb-3">
-              We are a boutique data science partner.
+              We are your boutique data science partner.
             </h2>
             <p className="text-white ">
               At Data Suave, we connect our clients to their data, from business

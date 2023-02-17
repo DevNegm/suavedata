@@ -10,11 +10,12 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <AboutUs />
-      <Services />
-        <h1 className="txt d-flex p-3">
+      <h1 className="txt d-flex p-3">
           root@suave-server:~$ ./update.sh Upgrading systems
         </h1>
+      <AboutUs />
+      <Services />
+       
     </div>
   );
 }

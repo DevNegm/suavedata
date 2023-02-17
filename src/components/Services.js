@@ -91,7 +91,7 @@ export default function Services() {
               
             </div>
           ))
-      : services?.slice(0,6)?.map((item) => (
+      : services?.map((item) => (
           <Link
             to={`/services/${slugify(item?.title.toLowerCase())}`}
             className="d-flex flex-column text-decoration-none my-0 p-3 rounded-3"

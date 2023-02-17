@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../Assets/White.png"
 
 export default function Footer() {
   return (
@@ -21,6 +22,10 @@ export default function Footer() {
               Contact Us
             </Link>
           </div>
+        </div>
+        <div className="d-flex justify-content-center">
+
+        <img src={logo} width={200} className="m-auto" alt="" />
         </div>
         <div className="row pt-5 justify-content-center">
           <p className="text-white text-center m-0">Austin, Texas Copyright © 2023 All Rights Reserved</p>
